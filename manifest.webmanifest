@@ -4,13 +4,13 @@
   "description": "Tiny resume of Sonny",
   "icons": [
     {
-      "src": "/images/sonny-192.jpg",
-      "type": "image/jpeg",
+      "src": "/images/sonny-192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/sonny-512.jpg",
-      "type": "image/jpeg",
+      "src": "/images/sonny-512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
