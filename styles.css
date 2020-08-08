@@ -149,7 +149,7 @@ dd {
 }
 
 .name span {
-  color: #999;
+  color: #ADADAD;
   display: inline-block;
 }
 
@@ -209,7 +209,7 @@ dd {
   }
 
   .box {
-    background: #333;
+    background-color: #232323;
   }
 
   .name {
@@ -217,7 +217,7 @@ dd {
   }
 
   .phone_email .item {
-    color: #999;
+    color: #ADADAD;
   }
 
   .icon svg,
