@@ -213,6 +213,7 @@ dd {
   }
 
   .name {
+    background-color: #232323;
     color: #ccc;
   }
 
@@ -235,6 +236,7 @@ dd {
   }
 
   .work-timeline-list a {
+    background-color: black;
     color: salmon;
   }
 
