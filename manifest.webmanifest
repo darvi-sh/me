@@ -1,0 +1,10 @@
+{
+  "short_name": "Sonny FE Dev",
+  "name": "Sonny Darvishzadeh // Frontend Developer",
+  "description": "Tiny resume of Sonny",
+  "start_url": "/?source=pwa",
+  "background_color": "#000000",
+  "display": "browser",
+  "scope": "/",
+  "theme_color": "#000000"
+}
