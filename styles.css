@@ -54,12 +54,12 @@ details[open] summary::before {
 @keyframes sweep {
   0% {
     opacity: 0;
-    margin-top: -5px;
+    margin-block-start: -5px;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0px;
+    margin-block-start: 0px;
   }
 }
 
@@ -85,7 +85,7 @@ dl {
 .work-timeline-list {
   background-color: white;
   color: grey;
-  margin-top: 0;
+  margin-block-start: 0;
   padding: 20px 0 20px 175px;
   position: relative;
 }
@@ -124,7 +124,7 @@ dl {
 }
 
 dt {
-  margin-top: 10px;
+  margin-block-start: 10px;
   position: relative;
 }
 
@@ -140,7 +140,7 @@ dt::before {
 }
 
 dd {
-  margin-bottom: 15px;
+  margin-block-end: 15px;
   font-size: 0.95em;
 }
 
@@ -154,6 +154,8 @@ dd {
 }
 
 .phone_email {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   font-weight: normal;
   line-height: 160%;
   font-size: 17px;
@@ -173,7 +175,7 @@ dd {
 .social_links {
   font-family: monospace, courier new, courier, verdana;
   line-height: 180%;
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .icon {
