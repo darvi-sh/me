@@ -2,9 +2,22 @@
   "short_name": "Sonny FE Dev",
   "name": "Sonny Darvishzadeh // Frontend Developer",
   "description": "Tiny resume of Sonny",
+  "icons": [
+    {
+      "src": "/images/sonny-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/sonny-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": "/?source=pwa",
   "background_color": "#000000",
   "display": "browser",
   "scope": "/",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "prefer_related_applications": true
 }
