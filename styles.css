@@ -162,27 +162,33 @@ dd {
 }
 
 .phone_email .item {
+  display: inline-flex;
+  align-items: center;
   color: #666;
-  display: inline-block;
   margin-right: 15px;
 }
 
 .item {
-  padding-left: 25px;
   position: relative;
 }
 
 .social_links {
+  display: flex;
   font-family: monospace, courier new, courier, verdana;
   line-height: 180%;
   margin-block-start: 20px;
 }
 
 .icon {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-right: 20px;
   position: relative;
-  padding-left: 25px;
+  min-height: 48px;
+}
+
+.social_links .icon svg {
+  margin-right: 8px;
 }
 
 .social_links i {
@@ -191,13 +197,11 @@ dd {
 
 .icon svg,
 .item svg {
+  height: 18px;
+  width: 18px;
   max-height: 18px;
   max-width: 18px;
   fill: #666;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-top: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -256,3 +260,7 @@ dd {
     );
   }
 }
+
+/* todo: media reduced animations */
+/* todo: media forced colours? */
+/* todo: media print high contrast and force light theme, possible? */
