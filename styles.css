@@ -1,6 +1,8 @@
 body {
   padding-top: 5vw;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: white;
+  color: black;
 }
 
 a,
@@ -209,7 +211,7 @@ dd {
     color: white;
     background: black;
   }
-
+  
   a {
     color: silver;
   }
@@ -264,3 +266,4 @@ dd {
 /* todo: media reduced animations */
 /* todo: media forced colours? */
 /* todo: media print high contrast and force light theme, possible? */
+/* todo: Lighthouse forced light theme */
