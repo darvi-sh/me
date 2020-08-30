@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   padding-top: 5vw;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -15,6 +24,17 @@ a {
   color: dimgrey;
 }
 
+a:not([href]) {
+  pointer-events: none;
+}
+
+a svg,
+a {
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 144ms;
+  transition-property: color, fill;
+}
+
 .link {
   cursor: pointer;
 }
@@ -26,7 +46,6 @@ a {
   background-color: whitesmoke;
   padding: 15px 35px 35px 35px;
   border-radius: 3px;
-  box-sizing: border-box;
 }
 
 summary::-webkit-details-marker {
@@ -108,15 +127,20 @@ dl {
 }
 
 .work-timeline-list a {
-  color: tomato;
+  color: steelblue;
   font-weight: bold;
+}
+
+.work-timeline-list a:hover {
+  color: mediumblue;
 }
 
 .work-timeline-list a::before {
   content: attr(data-work-period);
   left: -170px;
   position: absolute;
-  font-family: monospace, "Courier New", Courier;
+  font-family: Consolas, "DejaVu Sans Mono", monospace;
+  font-variant-numeric: tabular-nums slashed-zero;
   font-weight: normal;
   font-size: 12px;
   text-align: right;
@@ -133,11 +157,11 @@ dt {
 dt::before {
   content: "\2219";
   font-size: 60px;
-  font-family: monospace;
+  font-family: serif;
   color: gainsboro;
   position: absolute;
-  left: -35px;
-  top: -4px;
+  left: -26px;
+  top: 0px;
   text-shadow: 0px 2px 0px white, 0px -2px 0px white;
 }
 
@@ -152,7 +176,7 @@ dd {
 }
 
 .name span {
-  color: #ADADAD;
+  color: #adadad;
   display: inline-block;
 }
 
@@ -177,7 +201,7 @@ dd {
 
 .social_links {
   display: flex;
-  font-family: monospace, courier new, courier, verdana;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 180%;
   margin-block-start: 20px;
 }
@@ -207,12 +231,18 @@ dd {
   fill: #666;
 }
 
+.social_links a:hover,
+.social_links a:hover svg {
+  color: mediumblue;
+  fill: mediumblue;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
     background: black;
   }
-  
+
   a {
     color: silver;
   }
@@ -227,7 +257,7 @@ dd {
   }
 
   .phone_email .item {
-    color: #ADADAD;
+    color: #adadad;
   }
 
   .icon svg,
@@ -235,23 +265,33 @@ dd {
     fill: #999;
   }
 
+  .social_links a:hover,
+  .social_links a:hover svg {
+    color: khaki;
+    fill: khaki;
+  }
+
   .work-timeline-label {
-    background-color: black;
+    background-color: #111;
   }
 
   .work-timeline-list {
-    background-color: black;
+    background-color: #111;
     color: silver;
   }
 
   .work-timeline-list a {
-    background-color: black;
-    color: salmon;
+    background-color: #111;
+    color: #ccaa00;
+  }
+
+  .work-timeline-list a:hover {
+    color: khaki;
   }
 
   dt::before {
     color: dimgrey;
-    text-shadow: 0px 2px 0px black, 0px -2px 0px black;
+    text-shadow: 0px 2px 0px #111, 0px -2px 0px #111;
   }
 
   .work-timeline-list::before {
@@ -264,9 +304,15 @@ dd {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body {
     padding: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
   }
 
   .box {
@@ -280,7 +326,7 @@ dd {
   .work-timeline-list {
     padding: 20px;
   }
-  
+
   .work-timeline-list::before,
   dt::before {
     display: none;
@@ -289,7 +335,7 @@ dd {
   .work-timeline-list {
     position: relative;
   }
-  
+
   .work-timeline-list a::before {
     left: 0px;
     top: 20px;
