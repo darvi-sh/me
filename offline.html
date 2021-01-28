@@ -188,9 +188,10 @@
 
   .name {
     color: #333;
+    margin-block-end: 0;
   }
 
-  .name span {
+  .role {
     color: #adadad;
     display: inline-block;
   }
@@ -264,6 +265,11 @@
 
     .box {
       background-color: #232323;
+      color: #ccc;
+    }
+
+    .box p {
+      line-height: 150%;
     }
 
     .name {
@@ -334,8 +340,8 @@
       padding: 5px 15px 20px 15px;
     }
 
-    .name span {
-      font-size: 24px;
+    .role {
+      font-size: 1.1em;
     }
 
     .work-timeline-list {
@@ -375,8 +381,20 @@
   <main class="box">
     <h1 class="name">
       Sonny Darvishzadeh
-      <span>// UX Frontend Developer</span>
     </h1>
+    <h2 class="role">
+      UX Frontend Developer and Consultant
+    </h2>
+
+    <div class="about-me">
+      <p>
+        An experienced website developer and a great focus on accessibility, user experience, performance and creating meaningful and purposeful products.
+      </p>
+      <p>For business enquiries, feel free to email me or reach out on social media.</p>
+    </div>
+
+    <br />
+
     <div class="phone_email">
       <span class="item">
         <svg style="margin-right: 8px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792">
@@ -395,7 +413,7 @@
 
     <br />
 
-    <details class="work-timeline-wrapper" open>
+    <details class="work-timeline-wrapper">
       <summary class="work-timeline-label link">Work Timeline</summary>
       <dl class="work-timeline-list">
         <dt>
